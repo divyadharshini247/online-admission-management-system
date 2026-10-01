@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Dashboard | Admission Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="nav">
+
+    <div class="container nav-inner">
+
+        <a href="dashboard.html" class="brand">
+
+            <span class="logo">A</span>
+
+            Admission Portal
+
+        </a>
+
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+                Dashboard
+            </a>
+
+            <a href="my-application.html">
+                My Application
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button
+                id="logoutBtn"
+                class="btn btn-outline btn-sm"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main
+    class="dashboard-page"
+    id="dashboard"
+>
+
+    <div class="container">
+
+        <section class="welcome">
+
+            <span class="eyebrow">
+                STUDENT DASHBOARD
+            </span>
+
+            <h1>
+                Welcome Back,
+                <span id="dName">Student</span>
+            </h1>
+
+            <p>
+                Manage your admission application from here.
+            </p>
+
+        </section>
+
+
+        <section class="dashboard-stats">
+
+            <div class="dashboard-card">
+
+                <span>Student ID</span>
+
+                <strong id="dStudentId">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Application Status</span>
+
+                <strong id="dApplicationStatus">
+                    Not Submitted
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Selected Course</span>
+
+                <strong id="dCourse">
+                    Not Selected
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Registration</span>
+
+                <strong class="status-success">
+                    Completed
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-panel">
+
+            <div>
+
+                <span class="eyebrow">
+                    ADMISSION APPLICATION
+                </span>
+
+                <h2>
+                    Complete Your Admission Application
+                </h2>
+
+                <p>
+                    Enter your personal details, academic details,
+                    course information and complete the application.
+                </p>
+
+            </div>
+
+
+            <button
+                id="startBtn"
+                class="btn btn-primary"
+            >
+                START APPLICATION
+            </button>
+
+        </section>
+
+
+        <section class="dashboard-panel">
+
+            <div>
+
+                <span class="eyebrow">
+                    PROFILE
+                </span>
+
+                <h2>
+                    Student Profile
+                </h2>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+                <div>
+                    <span>Full Name</span>
+                    <strong id="pName">-</strong>
+                </div>
+
+                <div>
+                    <span>Email</span>
+                    <strong id="pEmail">-</strong>
+                </div>
+
+                <div>
+                    <span>Mobile</span>
+                    <strong id="pMobile">-</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div id="alert" class="alert"></div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Application | Admission Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="nav">
+
+    <div class="container nav-inner">
+
+        <a href="dashboard.html" class="brand">
+
+            <span class="logo">A</span>
+
+            Admission Portal
+
+        </a>
+
+
+        <nav class="menu">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a
+                href="my-application.html"
+                class="active"
+            >
+                My Application
+            </a>
+
+        </nav>
+
+
+        <button
+            id="logoutBtn"
+            class="btn btn-outline btn-sm"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<main
+    class="application-page"
+    id="applicationPage"
+>
+
+<div class="container">
+
+    <div class="page-heading">
+
+        <span class="eyebrow">
+            STUDENT PORTAL
+        </span>
+
+        <h1>
+            My Application
+        </h1>
+
+        <p>
+            View your submitted admission application details.
+        </p>
+
+    </div>
+
+
+    <div
+        id="applicationLoading"
+        class="application-card"
+    >
+        Loading application...
+    </div>
+
+
+    <div
+        id="applicationContent"
+        style="display:none;"
+    >
+
+        <div class="application-status-card">
+
+            <div>
+
+                <span>
+                    APPLICATION ID
+                </span>
+
+                <h2 id="applicationId">
+                    -
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    STATUS
+                </span>
+
+                <strong
+                    id="applicationStatus"
+                    class="status-success"
+                >
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <h2>
+                Personal Details
+            </h2>
+
+
+            <div class="detail-grid">
+
+                <div>
+                    <span>Full Name</span>
+                    <strong id="aName">-</strong>
+                </div>
+
+                <div>
+                    <span>Date of Birth</span>
+                    <strong id="aDob">-</strong>
+                </div>
+
+                <div>
+                    <span>Gender</span>
+                    <strong id="aGender">-</strong>
+                </div>
+
+                <div>
+                    <span>Phone</span>
+                    <strong id="aPhone">-</strong>
+                </div>
+
+                <div>
+                    <span>Email</span>
+                    <strong id="aEmail">-</strong>
+                </div>
+
+                <div>
+                    <span>City</span>
+                    <strong id="aCity">-</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <h2>
+                Academic Details
+            </h2>
+
+
+            <div class="detail-grid">
+
+                <div>
+                    <span>10th Board</span>
+                    <strong id="a10Board">-</strong>
+                </div>
+
+                <div>
+                    <span>10th Year</span>
+                    <strong id="a10Year">-</strong>
+                </div>
+
+                <div>
+                    <span>10th Percentage</span>
+                    <strong id="a10Marks">-</strong>
+                </div>
+
+                <div>
+                    <span>12th Board</span>
+                    <strong id="a12Board">-</strong>
+                </div>
+
+                <div>
+                    <span>12th Year</span>
+                    <strong id="a12Year">-</strong>
+                </div>
+
+                <div>
+                    <span>12th Percentage</span>
+                    <strong id="a12Marks">-</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <h2>
+                Course Details
+            </h2>
+
+
+            <div class="detail-grid">
+
+                <div>
+                    <span>Institution Type</span>
+                    <strong id="aInstitution">-</strong>
+                </div>
+
+                <div>
+                    <span>College</span>
+                    <strong id="aCollege">-</strong>
+                </div>
+
+                <div>
+                    <span>Course</span>
+                    <strong id="aCourse">-</strong>
+                </div>
+
+                <div>
+                    <span>Category</span>
+                    <strong id="aCategory">-</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <h2>
+                Payment Details
+            </h2>
+
+
+            <div class="detail-grid">
+
+                <div>
+                    <span>Application Fee</span>
+                    <strong>₹5,000</strong>
+                </div>
+
+                <div>
+                    <span>Payment Status</span>
+                    <strong id="aPaymentStatus">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Payment Reference</span>
+                    <strong id="aPaymentReference">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Application Date</span>
+                    <strong id="aDate">
+                        -
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="document-notice">
+
+            <div class="document-icon">
+                📄
+            </div>
+
+            <div>
+
+                <h3>
+                    Original Documents
+                </h3>
+
+                <p>
+                    Please submit the original documents to the
+                    college and visit the college for verification.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="applicationAlert" class="alert"></div>
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Online Admission Management System.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

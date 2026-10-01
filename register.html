@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration | Admission Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="auth-page">
+
+<header class="nav">
+
+    <div class="container nav-inner">
+
+        <a href="index.html" class="brand">
+            <span class="logo">A</span>
+            Admission Portal
+        </a>
+
+        <a href="index.html" class="btn btn-outline btn-sm">
+            Home
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="auth-wrapper">
+
+    <div class="auth-card">
+
+        <div id="formHead" class="auth-heading">
+
+            <span class="eyebrow">
+                STUDENT PORTAL
+            </span>
+
+            <h1>Create Account</h1>
+
+            <p>
+                Register to start your online admission application.
+            </p>
+
+        </div>
+
+
+        <form id="registerForm">
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="mobile">
+                    Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    maxlength="10"
+                    placeholder="10-digit mobile number"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Minimum 8 characters"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Re-enter password"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full"
+            >
+                CREATE ACCOUNT
+            </button>
+
+        </form>
+
+
+        <div id="alert" class="alert"></div>
+
+
+        <div id="success" class="success-card">
+
+            <h2>Registration Successful!</h2>
+
+            <p>
+                Your Student ID is:
+            </p>
+
+            <strong id="studentId"></strong>
+
+            <a href="login.html" class="btn btn-primary btn-full">
+                Go to Login
+            </a>
+
+        </div>
+
+
+        <div class="switch">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login here
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
